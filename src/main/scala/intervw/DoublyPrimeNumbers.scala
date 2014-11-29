@@ -35,7 +35,7 @@ object DoublyPrimeNumbers {
 
     /**
      * Uses a custom algorithm to generate doubly prime numbers
-     * Generates 100 doubly prime number in about  200ms on average using a single core of 2.99 GHz
+     * Generates 100 doubly prime number in about  150ms on average using a single core of 2.90 GHz
      * The algorithm used to generate doubly prime numbers is a greedy algorithm
      * On my PC, it can comfortably generate 160 doubly prime numbers with no custom JVM configuration
      * To generate more than 160 doubly prime numbers requires additional work on the algorithm
@@ -45,7 +45,7 @@ object DoublyPrimeNumbers {
       /**
        * Returns the largest integer number in the specified list
        */
-      def max(xs: List[Int]) = {
+      def max(xs: ListBuffer[Int]) = {
         if (xs.isEmpty) throw new NoSuchElementException
         xs.reduceLeft((x, y) => if (x > y) x else y)
       }
@@ -61,7 +61,7 @@ object DoublyPrimeNumbers {
 
       if (N == 0) N = numPrimes
       var primes = sieve(Stream.from(lower))
-      var _primes = primes.take(numPrimes).toList
+      var _primes = primes.take(numPrimes).to[ListBuffer]
       _primes.foreach { prime =>
         prime.toString.map(_.asDigit).toList.foreach { n =>
           if (!isPrime(n)) {
