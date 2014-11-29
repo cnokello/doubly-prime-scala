@@ -31,16 +31,12 @@ However, instructions for this assignment adheres to the original definition of 
  *Prime number generation algorithm*
  
  The algorithm I've used for generating a list of N prime numbers is the [Sieve of Eratosthenes](http://rosettacode.org/wiki/Sieve_of_Eratosthenes). 
- Scala-specific implementation is:
- 
- 	def sieve(s: Stream[Int]): Stream[Int] = {
-      s.head #:: sieve(s.tail.filter(_ % s.head != 0))
-    }
  
  
  **How to run**
  1. Ensure you have git installed. Refer to [this] (http://git-scm.com/book/en/v2/Getting-Started-Installing-Git) for git installation instructions. 
  2. Clone this repo by running the following command from within the directory into which you want the clone created:
+ 
  	> git clone https://github.com/cnokello/doubly-primed.git
  	
 3. If not yet installed, install Scala by following the instructions [here](http://scala-lang.org/download/install.html). Ensure you set the environment variables.
