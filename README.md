@@ -36,17 +36,17 @@ However, instructions for this assignment adheres to the original definition of 
  **Limitations of my Implementation**
  
  * My implementation currently only uses a single core. Further work to enable it make use of several cores is one possible way to improve it's performance and total number of doubly prime numbers that it can generate
- * There's a possibility that my implementation may not be able to generate infinite number of doubly prime numbers. It took 12 seconds to generate 10,000 doubly prime numbers on a 2.99GHz core. 
+ * There's a possibility that my implementation may not be able to generate infinite number of doubly prime numbers. It took 12 seconds to generate 10,000 doubly prime numbers on a 2.90GHz core. 
  	I've not worked out the complexity of my implementation of the algorithm. Vanilla sieve of eratosthenes algorithm has a time complexity of the order  O(n (log n) (log log n)) according to this [Wikipedia entry](http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes).    
- 	
- 	
- **Some observations**
+ 		
+ 
+**Some observations**
  
  * Changing the first prime number from 1 to 2 has a huge effect on the total number of doubly prime numbers this implementation can generate and the time it takes to generate them.
  * To generate 100 doubly prime numbers, it took about 40 milliseconds on 2.90GHz core. This is when other applications are also running.
  
  
- **How to run**
+**How to run**
  1. Ensure you have git installed. Refer to [this] (http://git-scm.com/book/en/v2/Getting-Started-Installing-Git) for git installation instructions. 
  2. Clone this repo by running the following command from within the directory into which you want the clone created:
  
