@@ -13,7 +13,7 @@ a prime number that also has  it's constituting digits  being prime.
 
 *Counter example*: 
 
-19 is prime.  1 is prime but 9 isn't since it's divisible by 3. Therefore, 19 is not doubly prime. 
+	> 19 is prime.  1 is prime but 9 isn't since it's divisible by 3. Therefore, 19 is not doubly prime. 
 
 *What is the smallest prime number?*
 
