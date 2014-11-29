@@ -38,7 +38,7 @@ However, instructions for this assignment adheres to the original definition of 
     }
  
  
- **HOW TO RUN FROM SOURCE**
+ **How to run**
  1. Ensure you have git installed. Refer to [this] (http://git-scm.com/book/en/v2/Getting-Started-Installing-Git) for git installation instructions. 
  2. Clone this repo by running the following command from within the directory into which you want the clone created:
  	> git clone https://github.com/cnokello/doubly-primed.git
