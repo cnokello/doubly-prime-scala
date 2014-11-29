@@ -46,7 +46,6 @@ class DoublyPrimeNumbersGenerator(N: Int) {
       current.toString.map(_.asDigit).toList.foreach { n =>
         if (!isPrime(n)) return true
       }
-
       return prime
     }
 
@@ -62,7 +61,6 @@ class DoublyPrimeNumbersGenerator(N: Int) {
     val primes = sieve(Stream.from(1), Nil)
     primes.take(N).toList
   }
-
 }
 
 /**
