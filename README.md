@@ -33,11 +33,9 @@ However, instructions for this assignment adheres to the original definition of 
  The algorithm I've used for generating a list of N prime numbers is the [Sieve of Eratosthenes](http://rosettacode.org/wiki/Sieve_of_Eratosthenes). 
  Scala-specific implementation is:
  
- 	```javascript
  	def sieve(s: Stream[Int]): Stream[Int] = {
       s.head #:: sieve(s.tail.filter(_ % s.head != 0))
     }
-    ```
  
  
  **HOW TO RUN FROM SOURCE**
@@ -54,7 +52,7 @@ However, instructions for this assignment adheres to the original definition of 
 	
 	To generate doubly prime numbers other than 100, run: 
 	
-	> sbt clean compile "run <N>"  // e.g., sbt clean compile "run 80"
+	> sbt clean compile "run N"  // e.g., sbt clean compile "run 80"
 	
 	This will compile and run the application
 	
