@@ -42,7 +42,8 @@ However, instructions for this assignment adheres to the original definition of 
 	This will compile and run the application
 	
 	Sample output for N = 100, sample output is as shown below:
-		> 	2        	3       	5       	7       	11      13      17      		23      31      37      53      71      73  
+		
+	> 	2        	3       	5       	7       	11      13      17      		23      31      37      53      71      73  
 			113		127     131     137     151     157     173     211     223     227     233     251     257     
 			271     277     311     313     317     331     337     353     373     521     523     525     
 			527     531     532     533  535        537     551     552     553     555     557     571     
